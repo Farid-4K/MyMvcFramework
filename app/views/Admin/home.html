@@ -1,0 +1,50 @@
+{% include html_menu %}
+<div id="mainContentController"></div>
+<div class="loader hidden">
+	<div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+	M.AutoInit();
+	$("nav a").click(function (){
+
+		$.ajax({
+			type: $(this).attr('data-method'),
+			url: $(this).attr('data-action'),
+			data: 'page='+$(this).attr('data-call'),
+			contentType: false,
+			cache: false,
+			processData: false,
+			beforeSend: function() {
+				$(".loader").css("opacity","1").removeClass("hidden");
+			},
+			success: function(result) {
+				$(".loader").animate({
+					opacity: 0,
+				},310,"swing",function(){
+					$(this).addClass("hidden");
+				});
+				$("#mainContentController").css({'opacity':'0'}).html(result).delay(310).animate({
+					opacity:1
+				},310,"swing");
+			},
+		});
+
+	});
+});
+</script>
+
+
+<div id="notification"></div>
+<script src="/public/js/form.js"></script>

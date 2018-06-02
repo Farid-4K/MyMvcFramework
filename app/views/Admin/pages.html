@@ -1,0 +1,53 @@
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<form action="/admin/main/pages" method="post">
+				<div class="card z-depth-1">
+					<div class="card-content">
+						<h4>Роутинг</h4>
+						<div class="pages-table">
+							<div class="flex-center">
+								<div class="-urls">
+									<div class="-title">Url</div>
+									{% for url, data in data %}
+										<div class="-url">
+											<div name='{{url | replace({"/":"-"}) }}'>{{url|default('/')}}</div>
+										</div>
+									{% endfor %}
+									<input type="text" required autocomplete="off" placeholder="URL" name="url">
+								</div>
+								<div class="-urls">
+									<div class="-title">Controller</div>
+									{% for url, data in data %}
+										<div class="-url">
+											<div id='{{data.controller}}'>{{data.controller|default('/')}}</div>
+										</div>
+									{% endfor %}
+									<input type="text" required autocomplete="off" placeholder="Controller" name="controller">
+								</div>
+								<div class="-urls">
+									<div class="-title">Action</div>
+									{% for url, data in data %}
+										<div class="-url">
+											<div id='{{data.action}}'>{{data.action|default('/')}}</div>
+										</div>
+									{% endfor %}
+									<input type="text" required autocomplete="off" placeholder="Action" name="action">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-action">
+						<button class="waves-effect white-text waves-light btn hoverable z-depth-1" type="submit">Добавить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="/public/js/form.js"></script>
+<!-- 
+	<div class="block z-depth-1">
+		
+	</div>
+-->
