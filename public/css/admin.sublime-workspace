@@ -1,0 +1,714 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"cps\tcaption-side"
+			],
+			[
+				"over",
+				"overflow-x\tproperty"
+			],
+			[
+				"l",
+				"left\ttext-align"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"slide",
+				"sliderControlMixed"
+			],
+			[
+				"file",
+				"fileData"
+			],
+			[
+				"in",
+				"inset\tbox-shadow"
+			],
+			[
+				"fo",
+				"fopen"
+			],
+			[
+				"arra",
+				"array_push"
+			],
+			[
+				"ca",
+				"class\tAttr"
+			],
+			[
+				"sp",
+				"space-between\tjustify-content"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"style",
+				"text-decoration-style\tproperty"
+			],
+			[
+				"text-s",
+				"text-decoration-style\tproperty"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"grid",
+				"grid-auto-flow\tproperty"
+			],
+			[
+				"grid-te",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"rb",
+				"rgba()\tbackground"
+			],
+			[
+				"bord",
+				"border-radius\tproperty"
+			],
+			[
+				"tra",
+				"transform-origin\tproperty"
+			],
+			[
+				"pos",
+				"position\tproperty"
+			],
+			[
+				"border-bo",
+				"border-bottom\tproperty"
+			],
+			[
+				"border-to",
+				"border-top-right-radius\tproperty"
+			],
+			[
+				"border-bot",
+				"border-bottom-left-radius\tproperty"
+			],
+			[
+				"a",
+				"autocomplete\tAttr"
+			],
+			[
+				"border",
+				"border\tproperty"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"th",
+				"this-"
+			],
+			[
+				"rg",
+				"rgba()\tbackground"
+			],
+			[
+				"text",
+				"text-decoration\tproperty"
+			],
+			[
+				"d",
+				"disc\tlist-style"
+			],
+			[
+				"li",
+				"list\tlist-style-type"
+			],
+			[
+				"back",
+				"background\tproperty"
+			],
+			[
+				"contro",
+				"controllerPath"
+			],
+			[
+				"debug",
+				"debug($variable)\tmixed"
+			],
+			[
+				"cont",
+				"controllerPath"
+			],
+			[
+				"marg",
+				"margin-bottom\tproperty"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"list",
+				"list-style\tproperty"
+			],
+			[
+				"req",
+				"req1\trequire_once …"
+			],
+			[
+				"db",
+				"db_password"
+			],
+			[
+				"mi",
+				"mih\tmin-height"
+			],
+			[
+				"pr",
+				"pos-r\tposition: relative;"
+			],
+			[
+				"c",
+				"cover\tbackground-size"
+			],
+			[
+				"v",
+				"vertical\tresize"
+			],
+			[
+				"b",
+				"both\tresize"
+			],
+			[
+				"brea",
+				"word-break\tproperty"
+			],
+			[
+				"find",
+				"findOne"
+			],
+			[
+				"on",
+				"onmouseover\tAttr"
+			],
+			[
+				"transf",
+				"transform\tproperty"
+			],
+			[
+				"ini",
+				"ini_set"
+			],
+			[
+				"sk",
+				"skewX()\ttransform"
+			],
+			[
+				"transform",
+				"transform-origin\tproperty"
+			],
+			[
+				"trans",
+				"translate3d()\ttransform"
+			],
+			[
+				"da",
+				"dataJSON"
+			],
+			[
+				"pre",
+				"preg_replace"
+			],
+			[
+				"tr",
+				"transparent\tbackground"
+			],
+			[
+				"au",
+				"autofocus\tAttr"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"p",
+				"progress\tcursor"
+			],
+			[
+				"r",
+				"row-reverse\tflex-direction"
+			],
+			[
+				"err",
+				"error_reporting"
+			],
+			[
+				"h",
+				"height\tproperty"
+			],
+			[
+				"ba",
+				"background\tproperty"
+			],
+			[
+				"z",
+				"z-index\tproperty"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"html",
+				"htmlentities"
+			],
+			[
+				"name",
+				"name_img"
+			],
+			[
+				"nam",
+				"name_img"
+			],
+			[
+				"strs",
+				"strstr"
+			],
+			[
+				"ht",
+				"htmlspecialchars"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"e",
+				"enctype\tAttr"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"obj",
+				"obj_now"
+			],
+			[
+				"slick",
+				"slick-active"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"live",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"e",
+				"Emmet: Balance (inward)"
+			],
+			[
+				"floo",
+				"Floobits - Join Workspace"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"paca",
+				"Package Control: Enable Package"
+			],
+			[
+				"livere",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git ",
+				"Git: Blame"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git q",
+				"Git: Quick Commit (current file)"
+			],
+			[
+				"git",
+				"Git: Gui"
+			],
+			[
+				"liverea",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"follo",
+				"Floobits - Follow User"
+			],
+			[
+				"php",
+				"phpfmt: format now"
+			],
+			[
+				"react",
+				"ReactIDE: Make import for current file"
+			],
+			[
+				"phpfmt",
+				"phpfmt: enable/disable additional transformations"
+			],
+			[
+				"livereload",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"foll",
+				"Floobits - Follow User"
+			],
+			[
+				"refre",
+				"Floobits - Refresh Workspace"
+			],
+			[
+				"ff",
+				"Floobits - Follow User"
+			],
+			[
+				"f",
+				"Floobits - Join Workspace"
+			],
+			[
+				"fol",
+				"Floobits - Stop Following Workspace"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 212.0,
+		"history":
+		[
+			"Hello",
+			"floobits"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/test/public/css/style.css",
+		"/var/www/test/app/views/Main/doc.html",
+		"/var/www/test/public/css/admin.css",
+		"/var/www/workscape/kcp/css/style.css",
+		"/var/www/workscape/kcp/js/custom.js",
+		"/var/www/workscape/kcp/kcp.main.html",
+		"/var/www/test/app/controllers/Admin/PagesController.php",
+		"/var/www/test/app/views/Admin/pages.html",
+		"/var/www/test/app/config/config.php",
+		"/var/www/test/app/config/root.php",
+		"/var/www/test/app/core/Model.php",
+		"/var/www/test/app/models/Admin/Home.php",
+		"/var/www/test/app/models/Admin/Pages.php",
+		"/var/www/test/app/core/Router.php",
+		"/var/www/test/app/config/route.php",
+		"/var/www/test/app/core/Controller.php",
+		"/var/www/test/app/controllers/Admin/MainController.php",
+		"/var/www/test/app/views/Admin/home.html",
+		"/var/www/test/app/views/Admin/index.html",
+		"/var/www/test/app/views/Admin/menu.html",
+		"/var/www/test/public/css/grid.css",
+		"/var/www/test/index.php",
+		"/var/www/test/app/controllers/Main/DocController.php",
+		"/var/www/test/app/controllers/Main/IndexController.php",
+		"/var/www/test/app/controllers/Admin/HomeController.php",
+		"/var/www/test/app/core/View.php",
+		"/var/www/test/.htaccess",
+		"/var/www/test/public/js/form.js",
+		"/var/www/html/laravel/vendor/phar-io/manifest/src/ManifestDocumentMapper.php",
+		"/var/www/html/laravel/vendor/phar-io/manifest/src/exceptions/InvalidUrlException.php",
+		"/var/www/test/app/views/default.php",
+		"/var/www/test/public/js/js.js",
+		"/var/www/test/public/css/devstyle.css",
+		"/var/www/html/laravel/app/Http/Controllers/HomeController.php",
+		"/var/www/html/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/var/www/test/public/css/intro.css",
+		"/var/www/test/app/views/Main/index.html",
+		"/var/www/test/app/views/Main/doc.php",
+		"/var/www/test/app/views/layouts/default.php",
+		"/etc/nginx/sites-enabled/blog",
+		"/etc/nginx/sites-enabled/five",
+		"/etc/nginx/sites-enabled/four",
+		"/etc/nginx/sites-enabled/one",
+		"/etc/nginx/sites-enabled/default",
+		"/etc/nginx/sites-enabled/pma",
+		"/etc/nginx/sites-enabled/project",
+		"/etc/nginx/sites-enabled/test",
+		"/etc/nginx/sites-enabled/three",
+		"/etc/nginx/sites-enabled/two",
+		"/etc/nginx/sites-enabled/workscape",
+		"/var/www/test/app/models/Main/Index.php",
+		"/var/www/blog/application/config/root.php",
+		"/var/www/test/app/storage/extensions/db.php",
+		"/var/www/sites/four/style.css",
+		"/var/www/sites/four/index.php",
+		"/var/www/sites/four/js.js",
+		"/var/www/blog/index.php",
+		"/var/www/blog/application/lib/Db.php",
+		"/var/www/test/app/views/Main/index.php",
+		"/var/www/test/app/models/Main/Main.php",
+		"/var/www/test/app/controllers/Main/MainController.php",
+		"/var/www/html/laravel/routes/web.php",
+		"/var/www/html/laravel/resources/views/welcome.blade.php",
+		"/var/www/html/laravel/.env",
+		"/var/www/html/laravel/artisan",
+		"/var/www/html/laravel/config/database.php",
+		"/var/www/html/laravel/config/app.php",
+		"/etc/apt/sources.list.d/phalcon_stable.list",
+		"/var/www/test/app/views/layouts",
+		"/var/www/blog/application/core/Controller.php",
+		"/var/www/blog/public/styles/index.css",
+		"/var/www/blog/application/views/layouts/ajaxPreviewPost.php",
+		"/var/www/blog/application/views/main/index.php",
+		"/var/www/blog/public/styles/style.css",
+		"/var/www/blog/application/models/Account.php",
+		"/var/www/blog/application/models/Members.php",
+		"/var/www/blog/application/core/View.php",
+		"/var/www/blog/public/scripts/script.js",
+		"/var/www/blog/application/controllers/MembersController.php",
+		"/var/www/blog/public/scripts/blog.js",
+		"/var/www/blog/application/views/members/editPosts.php",
+		"/var/www/blog/public/styles/members.css",
+		"/var/www/blog/application/views/members/blog.php",
+		"/var/www/blog/public/styles/market.css",
+		"/var/www/blog/application/views/errors/403.php",
+		"/home/farid/.config/sublime-text-3/Packages/User/Git.sublime-settings",
+		"/var/www/blog/README.md",
+		"/home/farid/.config/sublime-text-3/Packages/Git/Git.sublime-settings",
+		"/home/farid/.gitconfig",
+		"/home/farid/Рабочий стол/cavaleria/_config.yml",
+		"/var/www/blog/application/controllers/MainController.php",
+		"/etc/nginx/sites-available/blog",
+		"/var/www/blog/application/views/account/registration.php",
+		"/var/www/blog/application/models/Main.php",
+		"/var/www/blog/application/config/routes.php",
+		"/var/www/blog/application/views/account/login.php",
+		"/var/www/blog/public/scripts/form.js",
+		"/var/www/workscape/mvc-start-V-1.0.3/application/core/Router.php",
+		"/var/www/workscape/example-mvc/index.php",
+		"/var/www/workscape/example-mvc/application/Route.php",
+		"/var/www/workscape/example-mvc/engine/core/Model.php",
+		"/var/www/workscape/mvc-start-V-1.0.3/application/views/layouts/default.php",
+		"/var/www/workscape/example-mvc/config.php",
+		"/var/www/workscape/example-mvc/engine/core/Router.php",
+		"/var/www/workscape/example-mvc/engine/core/View.php",
+		"/var/www/workscape/mvc-start-V-1.0.3/application/config/Db.php",
+		"/var/www/workscape/example-mvc/engine/core/config.php",
+		"/var/www/workscape/example-mvc/engine/core/Controller.php",
+		"/var/www/workscape/mvc-start-V-1.0.3/application/lib/Db.php",
+		"/var/www/workscape/mvc-start-V-1.0.3/application/lib/dev.php",
+		"/var/www/workscape/mvc-start-V-1.0.3/application/core/View.php",
+		"/var/www/workscape/example-mvc/application/route_config.php",
+		"/var/www/workscape/example-mvc/application/route.php",
+		"/var/www/workscape/example-mvc/application/controller/catalog/catalog.php",
+		"/var/www/workscape/mvc-start-V-1.0.3/application/config/routes.php",
+		"/var/www/workscape/mvc-start-V-1.0.3/index.php",
+		"/var/www/workscape/mvc-start-V-1.0.3/application/core/Controller.php",
+		"/var/www/blog/application/views/layouts/default.php",
+		"/var/www/blog/public/styles/grid.css",
+		"/home/farid/Шаблоны/HTML page.html",
+		"/home/farid/Шаблоны/Plain Text.txt",
+		"/home/farid/Рабочий стол/Index.php",
+		"/home/farid/Шаблоны/Php File.php",
+		"/home/farid/.config/sublime-text-3/Packages/phpfmt/message",
+		"/var/www/test/style.css",
+		"/var/www/test/js/script.js",
+		"/home/farid/.config/sublime-text-3/Packages/sublime-react-ide/ReactIDE.sublime-settings",
+		"/etc/php/7.2/fpm/pool.d/www.conf"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 167.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 78.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "admin.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

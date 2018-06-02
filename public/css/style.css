@@ -1,0 +1,17 @@
+.notification{position: fixed;top: 10px;right: 10px;
+	width: 300px;height: 130px;background: #474747;z-index: 98976321;
+}
+.notification .h5{text-align: center;color: #ccc;font-weight: 600;}
+.notification .h4{text-align: center;color: #fff;}
+
+.active{display:block!important}
+.hidden{display:none!important}
+.loader{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+.inline{display: inline-block!important}
+.card-action{display: flex;justify-content: flex-end;}
