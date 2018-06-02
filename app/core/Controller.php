@@ -71,6 +71,4 @@ abstract class Controller
 }
 
 class AccessException extends Exception
-{
-
-}
+{}

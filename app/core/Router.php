@@ -1,8 +1,7 @@
 <?php
 namespace app\core;
 
-require_once ROOT . '/app/config/config.php';
-use app\config\Config as Config;
+use app\config\Config;
 use app\core\View;
 
 /**
@@ -49,7 +48,7 @@ class Router
    public function run()
    {
       if ($this->match()) {
-         $controllerPath = CONTROLLER_PATH . '\\' . $this->params['controller'] . '\\';
+         $controllerPath = 'app\controllers' . '\\' . $this->params['controller'] . '\\';
          $controllerPath = $controllerPath . ucfirst($this->params['action']) . 'Controller';
          if (class_exists($controllerPath)) {
             $action = $this->params['action'] . 'Action';

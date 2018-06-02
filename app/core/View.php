@@ -32,7 +32,7 @@ class View
    public static function errorCode($code)
    {
       http_response_code($code);
-      $path = ROOT . VIEWS_PATH . $code . '.php';
+      $path = ROOT . '/app/views/' . $code . '.php';
       if (file_exists($path)) {
          require_once $path;
       }
