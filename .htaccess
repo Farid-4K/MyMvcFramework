@@ -1,0 +1,8 @@
+addDefaultCharset utf-8
+php_flag session.use_only_cookies on
+php_value session.gc_maxlifetime 3600
+RewriteEngine on
+RewriteBase /
+rewritecond %(REQUEST_FILENAME) !-f
+rewritecond %(REQUEST_FILENAME) !-d
+RewriteRule ^(.*)$ index.php
