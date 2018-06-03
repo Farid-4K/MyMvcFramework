@@ -6,7 +6,7 @@ require_once ROOT . '/app/vendor/autoload.php';
 use app\core\Router;
 use Dotenv\Dotenv;
 
-/** Load setting */
+/* Load setting */
 $dotenv = new Dotenv(ROOT);
 $dotenv->load();
 
