@@ -14,27 +14,6 @@ class Config
          'action'     => 'index',
       ],
 
-      'documentation' => [
-         'controller' => 'Main',
-         'action'     => 'doc',
-      ],
-
-      'admin' => [
-         'controller' => 'Admin',
-         'action'     => 'home',
-      ],
-
-      'admin/main' => [
-         'controller' => 'Admin',
-         'action'     => 'main',
-      ],
-
-      'admin/main/pages' => [
-         'controller' => 'Admin',
-         'action'     => 'pages',
-      ],
-      //do_not_erase
-
    ];
 
    const DB = [

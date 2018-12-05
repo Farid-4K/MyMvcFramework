@@ -1,0 +1,30 @@
+{
+  "name": "mvc",
+  "version": "1.0.0",
+  "description": "mvc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farid-4K/MyMvcFramework.git"
+  },
+  "keywords": [
+    "mvc",
+    "framework"
+  ],
+  "author": "Farid Ahmedov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Farid-4K/MyMvcFramework/issues"
+  },
+  "homepage": "https://github.com/Farid-4K/MyMvcFramework#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "flexboxgrid": "^6.3.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-image": "^4.4.1",
+    "gulp-param": "^1.0.3",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0"
+  }
+}

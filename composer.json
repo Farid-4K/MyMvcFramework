@@ -1,0 +1,24 @@
+{
+  "name": "Phalcon/framework",
+  "description": "teach",
+  "type": "project",
+  "require": {
+    "twig/twig": "^2.0",
+    "gabordemooij/redbean": "^5.1",
+    "vlucas/phpdotenv": "^2.4",
+    "squizlabs/php_codesniffer": "^3.3",
+    "ext-json": "*"
+  },
+  "authors": [
+    {
+      "name": "Farid Ahmedov",
+      "email": "farid5ip50@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "minimum-stability": "dev"
+}

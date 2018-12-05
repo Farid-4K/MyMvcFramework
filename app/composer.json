@@ -1,7 +1,0 @@
-{
-    "require": {
-        "twig/twig": "^2.0",
-        "gabordemooij/redbean": "^5.1",
-        "vlucas/phpdotenv": "^2.4"
-    }
-}

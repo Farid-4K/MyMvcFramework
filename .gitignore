@@ -1,3 +1,10 @@
 .phpintel
-app/vendor
+vendor
 .htaccess
+.idea
+node_modules
+tmp
+.vscode
+.vs_code
+vscode
+.DS_store

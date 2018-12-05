@@ -1,5 +1,5 @@
 <?php
-namespace app\core;
+namespace App\Core;
 
 /**
  *
@@ -20,7 +20,7 @@ class View
    {
       $this->route = $route;
       $this->path = $route['controller'] . '/' . $route['action'];
-      $this->loader = new Twig_Loader_Filesystem(ROOT . '/app/views');
+      $this->loader = new Twig_Loader_Filesystem(__DIR__ . '/../assets/templates');
       $this->twig = new Twig_Environment($this->loader, [
          // 'cache' => ROOT . '/app/storage/cache/twig_cache/',
       ]);
@@ -32,7 +32,7 @@ class View
    public static function errorCode($code)
    {
       http_response_code($code);
-      $path = ROOT . '/app/views/' . $code . '.php';
+      $path = '../views/' . $code . '.php';
       if (file_exists($path)) {
          require_once $path;
       }

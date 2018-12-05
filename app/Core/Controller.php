@@ -1,7 +1,6 @@
 <?php
-namespace app\core;
+namespace App\Core;
 
-use app\core\View;
 use Exception;
 
 /**
