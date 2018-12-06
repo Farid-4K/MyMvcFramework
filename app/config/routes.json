@@ -1,0 +1,7 @@
+{
+  "": {
+    "namespace": "main",
+    "controller": "main",
+    "action": "index"
+  }
+}

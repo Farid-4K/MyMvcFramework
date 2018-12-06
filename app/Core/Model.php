@@ -1,22 +1,21 @@
 <?php
-namespace app\core;
 
-use app\config\Config;
-use \RedBeanPHP\R as Db;
+namespace App\Core;
 
-/**
- * Модель
- */
-abstract class Model extends Db
+use \Exception;
+use \RedBeanPHP\R;
+
+abstract class Model extends R
 {
-   public $db;
-   public function connect()
-   {
-      $this->db = new Db;
-      $db = Config::DB;
-      $this->db->setup('mysql:host=' . $db['HOST'] . ';dbname=' . $db['NAME'], $db['USER'], $db['PASSWORD']);
-      if (!$this->db->testConnection()) {
-         exit('Нет соединения с базой данных');
-      }
-   }
+    /**
+     * @param string $config - redBeanConfig
+     * @throws \Exception
+     */
+    public static function connect(string $config = '')
+    {
+        self::setup($config || 'sqlite:../storage/database.sqlite');
+        if (self::testConnection()) {
+            throw new Exception("Could not establish database connection");
+        }
+    }
 }

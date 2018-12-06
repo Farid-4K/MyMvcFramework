@@ -1,10 +1,9 @@
 .phpintel
-vendor
-.htaccess
 .idea
-node_modules
-tmp
 .vscode
 .vs_code
-vscode
 .DS_store
+/vendor
+vscode
+tmp
+node_modules

@@ -1,73 +1,36 @@
 <?php
+
 namespace App\Core;
 
-use Exception;
-
-/**
- * Контроллер
- */
 abstract class Controller
 {
+    protected $view;
 
-   public $route;
-   public $view;
+    protected $model;
 
-   public function __construct($route)
-   {
-      $this->view = new View($route);
-      $this->model = $this->loadModel($route['controller'], $route['action']);
-   }
+    /**
+     * Controller constructor.
+     * @param array $route
+     */
+    public function __construct(array $route)
+    {
+        $this->view = new View();
+        $this->model = $this->loadModel($route['controller'], $route['action']);
+    }
 
-   /**
-    * Загрузка модели
-    */
-   public function loadModel($controller, $action)
-   {
-      $path = 'app\models\\' . ucfirst($controller) . '\\' . ucfirst($action);
-      if (class_exists($path)) {
-         return new $path;
-      }
-   }
-
-   public function accessLevelCheck($level)
-   {
-      $methods = [
-         'public',
-         'private',
-         'protected',
-      ];
-      try {
-         if (in_array($level, $methods)) {
-            switch ($level) {
-
-               case 'public':
-                  continue;
-                  break;
-
-               case 'private':
-                  if (!empty($_SESSION['auth'])) {
-                     continue;
-                  } else {
-                     View::errorCode(403);
-                  }
-                  break;
-
-               case 'protected':
-                  if (!empty($_SESSION['private']) == true) {
-                     continue;
-                  } else {
-                     View::errorCode(403);
-                  }
-                  break;
-            }
-         } else {
-            throw new AccessException("Cannot find access level in accessLevelCheck( {$level} )");
-         }
-      } catch (AccessException $ex) {
-         exit($ex->getMessage());
-      }
-   }
+    /**
+     * Загрузка модели
+     * @param string $controller
+     * @param string $action
+     * @return mixed
+     */
+    protected function loadModel(string $controller, string $action)
+    {
+        $controller = ucfirst($controller);
+        $action = ucfirst($action);
+        $model_class = "App\Models\{$controller}\{$action}";
+        if (class_exists($model_class)) {
+            return new $model_class;
+        }
+    }
 }
-
-class AccessException extends Exception
-{}
