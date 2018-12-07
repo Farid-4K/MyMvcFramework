@@ -8,9 +8,11 @@ class Router
 {
     private $routes = [];
     private $params;
+    private $exception;
 
     public function __construct()
     {
+        $this->exception = new ExceptionHandler();
         $routes = FileSystem::config('routes');
         foreach ($routes as $url => $options) {
             $this->add($url, $options);
@@ -49,17 +51,12 @@ class Router
         try {
             $this->call();
         } catch (Exception $exception) {
+            $this->exception->logging($exception);
             switch ($exception->getCode()) {
                 case 1:
                     http_response_code(404);
                     break;
                 case 2:
-                    if (Helpers::env('APP_DEBUG')) {
-                        exit($exception->getMessage());
-                    } else {
-                        http_response_code(500);
-                    }
-                    break;
                 case 3:
                     if (Helpers::env('APP_DEBUG')) {
                         exit($exception->getMessage());
