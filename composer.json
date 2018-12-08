@@ -6,7 +6,7 @@
     "twig/twig": "^2.0",
     "gabordemooij/redbean": "^5.1",
     "vlucas/phpdotenv": "^2.4",
-    "squizlabs/php_codesniffer": "^3.3",
+    "squizlabs/php_codesniffer": "*",
     "ext-json": "*"
   },
   "authors": [

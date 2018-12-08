@@ -1,0 +1,7 @@
+{
+  "password": "password",
+  "database": "default",
+  "host": "localhost",
+  "self": "mysql",
+  "user": "user"
+}

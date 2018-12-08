@@ -1,19 +1,26 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Core;
 
+use App\Core\Factory\JournalFactory;
 use Exception;
 
+/**
+ * Class Router
+ *
+ * @package App\Core
+ */
 class Router
 {
     private $routes = [];
     private $params;
-    private $exception;
+    private $journal;
 
     public function __construct()
     {
-        $this->exception = new ExceptionHandler();
         $routes = FileSystem::config('routes');
+        $this->journal = JournalFactory::create(FileSystem::config('journal'));
         foreach ($routes as $url => $options) {
             $this->add($url, $options);
         }
@@ -26,7 +33,10 @@ class Router
         $this->routes[$route] = $params;
     }
 
-    public function match()
+    /**
+     * @return bool
+     */
+    public function match(): bool
     {
         $url = trim($_SERVER['REQUEST_URI'], '/');
         foreach ($this->routes as $route => $params) {
@@ -51,7 +61,7 @@ class Router
         try {
             $this->call();
         } catch (Exception $exception) {
-            $this->exception->logging($exception);
+            $this->journal->exception($exception);
             switch ($exception->getCode()) {
                 case 1:
                     http_response_code(404);
@@ -73,7 +83,7 @@ class Router
     private function call()
     {
         if (!$this->match()) {
-            throw new Exception("[router] - route not found", 1);
+            throw new Exception(__METHOD__ . " - Route not found", 1);
         }
         $namespace = FileSystem::controllers(true);
         if (array_key_exists('namespace', $this->params)) {
@@ -82,11 +92,11 @@ class Router
         $controller = '\\' . ucfirst($this->params['controller']);
         $controllerPath = $namespace . $controller . "Controller";
         if (!class_exists($controllerPath)) {
-            throw new Exception("[router] - Class not found", 2);
+            throw new Exception(__METHOD__ . " - Class not found", 2);
         }
         $action = $this->params['action'];
         if (!method_exists($controllerPath, $action)) {
-            throw new Exception("[router] - Method not found", 3);
+            throw new Exception(__METHOD__ . " - Method not found", 3);
         }
         $controller = new $controllerPath($this->params);
         $controller->$action();

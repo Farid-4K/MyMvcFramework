@@ -2,20 +2,31 @@
 
 namespace App\Core;
 
-use \Exception;
-use \RedBeanPHP\R;
+use App\Core\Factory\JournalFactory;
+use Exception;
+use RedBeanPHP\R;
 
 abstract class Model extends R
 {
+    private $journal;
+
     /**
-     * @param string $config - redBeanConfig
-     * @throws \Exception
+     * @param string|null $config
+     * @param null $user
+     * @param null $password
+     * @return bool|\RedBeanPHP\ToolBox
      */
-    public static function connect(string $config = '')
+    public function connect(string $config, $user = null, $password = null)
     {
-        self::setup($config || 'sqlite:../storage/database.sqlite');
-        if (self::testConnection()) {
-            throw new Exception("Could not establish database connection");
+        $this->journal = JournalFactory::create(FileSystem::config('journal'));
+        try {
+            $temp = self::setup($config, $user, $password);
+            if (!self::testConnection()) {
+                throw new Exception("Could not establish database connection");
+            }
+            return $temp;
+        } catch (Exception $exception) {
+            $this->journal->exception($exception);
         }
     }
 }
